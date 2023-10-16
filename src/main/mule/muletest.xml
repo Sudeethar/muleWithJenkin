@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="ebb76920-2149-45e5-9b52-02a0085c84ab" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<flow name="muletestFlow" doc:id="677ca0ae-91fb-4881-9ab8-b98de547f024" >
+		<http:listener doc:name="Listener" doc:id="8decd816-29b5-4a4d-a7f2-d109c7515bf2" config-ref="HTTP_Listener_config" path="/testmule"/>
+		<logger level="INFO" doc:name="Logger" doc:id="a4081bfa-3476-448f-b318-7365bf2b06f2" message="test"/>
+		<ee:transform doc:name="Transform Message" doc:id="7748bf6f-9c9d-4edb-8715-b860c3aa4e27" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+{
+"name"	:"Sudeetha"
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+</mule>
