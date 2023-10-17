@@ -35,8 +35,8 @@
 			        <cloudhub2Deployment>
 				      <uri>https://anypoint.mulesoft.com</uri>
 				      <provider>MC</provider>
-				      <environment>Integration</environment>
-				      <target>int-private-cloud-v1</target>
+				      <environment>Sandbox</environment>
+				      <target>Shared Space</target>
 				      <muleVersion>4.4.0</muleVersion>
 				     <!--  <username>${user}</username>
 				      <password>${pass}</password> -->
