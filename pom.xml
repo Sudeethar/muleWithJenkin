@@ -42,6 +42,8 @@
 				      <region>ap-southeast-2</region>
 				      <muleVersion>4.4.0</muleVersion>
 				      <connectedAppGrantType>client_credentials</connectedAppGrantType>
+					<connectedAppClientSecret>${anypoint.platform.client_secret}</connectedAppClientSecret>
+                  		      <connectedAppClientId>${anypoint.platform.client_id}</connectedAppClientId>
 				     <!--  <username>${user}</username>
 				      <password>${pass}</password> -->
 				      <applicationName>muletest</applicationName>
