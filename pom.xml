@@ -39,7 +39,7 @@
 				      <provider>MC</provider>
 				      <environment>Integration</environment>
 				      <target>int-private-cloud-v1</target>
-				      <region>${anypoint.region}</region>
+				     
 				      <muleVersion>4.4.0</muleVersion>
 				      <connectedAppGrantType>client_credentials</connectedAppGrantType>
 					<connectedAppClientSecret>${anypoint.platform.client_secret}</connectedAppClientSecret>
