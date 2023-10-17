@@ -36,7 +36,7 @@
 				      <uri>https://anypoint.mulesoft.com</uri>
 				      <provider>MC</provider>
 				      <environment>Sandbox</environment>
-				      <target>Shared Space</target>
+				      <target>CloudHub 2.0</target>
 				      <muleVersion>4.4.0</muleVersion>
 				     <!--  <username>${user}</username>
 				      <password>${pass}</password> -->
