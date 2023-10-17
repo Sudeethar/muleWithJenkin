@@ -34,10 +34,11 @@
 			        
 			        <cloudhub2Deployment>
 				      <uri>https://anypoint.mulesoft.com</uri>
-				      <provider>TW</provider>
-				      <environment>Sandbox</environment>
-				      <target>CloudHub 2.0</target>
+				      <provider>MC</provider>
+				      <environment>Integration</environment>
+				      <target>int-private-cloud-v1</target>
 				      <muleVersion>4.4.0</muleVersion>
+				      <connectedAppGrantType>client_credentials</connectedAppGrantType>
 				     <!--  <username>${user}</username>
 				      <password>${pass}</password> -->
 				      <applicationName>muletest</applicationName>
