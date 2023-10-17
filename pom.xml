@@ -39,6 +39,7 @@
 				      <provider>MC</provider>
 				      <environment>Integration</environment>
 				      <target>int-private-cloud-v1</target>
+				      <region>ap-southeast-2</region>
 				      <muleVersion>4.4.0</muleVersion>
 				      <connectedAppGrantType>client_credentials</connectedAppGrantType>
 				     <!--  <username>${user}</username>
