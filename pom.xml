@@ -48,15 +48,12 @@
 				      <password>${pass}</password> -->
 				      <applicationName>muletest</applicationName>
 				      <replicas>1</replicas>
-				      <vCores>1</vCores>
+				      <vCores>0.1</vCores>
 				      <deploymentSettings>
-				        <http>
-				          <inbound>
-				            <publicUrl>muletest</publicUrl>
-				            <forwardSslSession>false</forwardSslSession>
-				            <lastMileSecurity>false</lastMileSecurity>
-				          </inbound>
-				        </http>
+				        <lastMileSecurity>false</lastMileSecurity>
+       					<forwardSslSession>false</forwardSslSession>
+				        
+					<generateDefaultPublicUrl>true</generateDefaultPublicUrl>
 				      </deploymentSettings>
 				    </cloudhub2Deployment>
 			        
