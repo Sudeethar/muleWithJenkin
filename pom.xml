@@ -39,7 +39,7 @@
 				      <provider>MC</provider>
 				      <environment>Integration</environment>
 				      <target>int-private-cloud-v1</target>
-				      <server>anypoint-exchange-v3</server>
+				      <!-- <server>anypoint-exchange-v3</server> -->
 				      <muleVersion>4.4.0</muleVersion>
 				      <connectedAppGrantType>client_credentials</connectedAppGrantType>
 					<connectedAppClientSecret>${anypoint.platform.client_secret}</connectedAppClientSecret>
